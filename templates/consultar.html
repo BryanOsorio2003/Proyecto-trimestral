@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/images/logo.jpg">
+    <link rel="stylesheet" type="text/css" href="../static/css/stytle.css">
+    <title>Ajustes Eventos</title>
+</head>
+<body class=fondoburj>
+    <div class="consultar">
+        <h1>Eventos</h1>
+        <div class="login-box3">
+            <form action="/buscar/post" method="POST">
+                <div class="fondo2">
+                    <div class="textbox1">
+                        <input name="evento" type="text" placeholder="ID Evento" required>
+                    </div>
+                </div>
+                <div class="boton">
+                    <input class="field1" type="submit" value="consultar">  
+                </div>
+            </form>
+        </div>
+        <div class="lista">
+            {% for dato in lista %}
+            <p>{{dato}}</p>
+            {% endfor %}
+        </div>
+        <div class="ainicio">
+            <a href="/inicio" >inicio</a>
+        </div>
+        <div class="h2">
+            <p>Fecha:</p>
+            <p>Hora:</p>
+            <p>Descripcion:</p>
+            <p>Lugar:</p>
+        </div>
+    </div>
+    <a href="#modal" id="show-modal">Editar</a>
+
+    <aside id="modal" class="modal">
+        <div class="content-modal">
+            <header>
+                <a href="#" class="close-modal">x</a>
+                <div class="mostrareditar">
+                    <p>¡Quieres Editar!</p>
+                </div>
+            </header>
+            <div class="article">
+                <article>
+                    <form action="/consultar/post" method="POST">
+                        <div class="fondo22">
+                            <div class="textbox11">
+                                <input name="eventos" type="text" placeholder="ID Evento" required>
+                            </div>
+                        </div>
+                        <div class="fondo3">
+                            <div class="textbox2">
+                                <input id="editar" name="fecha" type="date" placeholder="Fecha">
+                            </div>
+                        </div>
+                        <div id="editar">
+                            <div class="fondo4">
+                                <div class="textbox2">
+                                    <input name="hora" type="time" placeholder="Hora">
+                                </div>
+                            </div>
+                            <div class="fondo5">
+                                <div class="textbox2">
+                                    <input name="descripcion" type="text" placeholder="Descripcion">
+                                </div>
+                            </div>
+                            <div class="fondo6">
+                                <div class="textbox2">
+                                    <input name="lugar" type="text" placeholder="Lugar">
+                                </div>
+                            </div>
+                            <div class="boton1">
+                                <input type="submit" value="Actualizar">
+                            </div>
+                        </div>   
+                    </form>
+                </article>
+            </div>
+        </div>
+        <a href="#" class="btn-close-modal"></a>
+    </aside>
+    
+    <a href="#eliminar" id="show-modal1">Eliminar</a>
+
+    <aside id="eliminar" class="eliminar">
+        <div class="content-modal1">
+            <header>
+                <a href="#" class="close-modal1">x</a>
+                <div class="mostrareditar">
+                    <p>¡Quieres Eliminar!</p>
+                </div>
+            </header>
+            <div class="article1">
+                <article>
+                    <form action="/eliminar/post" method="POST">
+                        <div class="fondo7">
+                            <div class="textbox1">
+                                <input name="eventoss" type="text" placeholder="ID Evento" required>
+                            </div>
+                        </div>
+                        <div class="boton2">
+                            <input type="submit" value="Eliminar">
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </div>
+        <a href="#" class="btn-close-modal1"></a>
+    </aside>   
+</body>
+</html>

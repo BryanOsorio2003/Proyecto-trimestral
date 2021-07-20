@@ -1,0 +1,1119 @@
+@charset "utf-8";
+
+*{
+    font-family: verdana;
+}
+/*--------------------------------------------index-----------------------------------------*/
+.fondo{
+    margin: 0;
+    padding: 0;
+    background:url("../images/login.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.login-box {
+    width: 320px;
+    height: 410px;
+    background: rgb(219, 219, 219);
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.login-box .avatar {
+    width: 130px;
+    height: 110px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(45% - 45px);
+}
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 26px;
+}
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(118, 105, 165);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login-box a{
+    border: none;
+    outline: none;
+    text-decoration:none;
+    height: 40px;
+    background: rgb(118, 105, 165);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.emergente{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 550px;
+    border: 1px solid rgb(126, 190, 233);
+    background-color: rgb(154, 194, 253);
+    color: black;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+/*-------------------------------------------nuevousuario-----------------------------------*/
+.fondonuevo{
+    margin: 0;
+    padding: 0;
+    background:url("../images/login.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.login-box1 {
+    width: 340px;
+    height: 520px;
+    background: rgb(219, 219, 219);
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.login-box1 .avatar {
+    width: 130px;
+    height: 110px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(45% - 45px);
+}
+.login-box1 input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box1 input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(118, 105, 165);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login-box1 a{
+    border: none;
+    outline: none;
+    text-decoration:none;
+    height: 40px;
+    background: rgb(118, 105, 165);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*--------------------------------------------inicio-----------------------------------------*/
+.fondoinicio{
+    margin: 0;
+    padding: 0;
+    background:url("../images/inicio.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.inicio{
+    width:750px;
+    min-height: 500px ;
+	background-color:rgb(219, 219, 219);
+	margin:0 auto;
+    padding: 25px;
+    margin-top: 2%;
+}
+.logoinicio{
+    width: 55px;
+    height: 50px;
+}
+table{
+    width: 100%;
+}
+table th td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th td{
+    padding: 10px;
+}
+th{
+    background-color:rgb(118, 105, 165);
+    color: #fff;
+}
+td{
+    padding: 10px;
+}
+tr td p{
+    text-align: justify;
+}
+nav{
+	background-color: rgb(118, 105, 165);
+}
+nav ul{
+	min-height:60px;
+	margin:0;
+	padding:0;
+	line-height:31px;
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+}
+nav ul li{
+	list-style:none;
+}
+
+nav ul li a{
+	text-decoration:none;
+	padding:7px 14px;
+	background-color:#fff;
+	color:#000;
+	border-radius:8px;
+}
+.ajustes{
+    width: 30x;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submenu{
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+.cierresesion{
+    padding: 11px;
+    width: 110px;
+    background-color: rgb(206, 195, 195);
+    font-size: 20px;
+	font-family: 'Open sans';
+    border: 30px;
+}
+.submenu li a{
+    background-color: rgb(206, 195, 195);
+	display: block;
+	font-family: 'Open sans';
+	text-decoration: none;
+    width: 110px;
+    font-size: 20px;
+}
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+/*--------------------------------------------evento-----------------------------------------*/
+.fondoevento{
+    margin: 0;
+    padding: 0;
+    background:url("../images/evento.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.evento{
+    width:750px;
+    height: 500px;
+	background-color:rgb(219, 219, 219);
+	margin:0 auto;
+    padding: 25px;
+}
+.login-box2 {
+    width: 390px;
+    height: 680px;
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 34%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.login-box2 input {
+    width: 58%;
+    margin-bottom: 20px;
+}
+.login-box2 input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 35px;
+    background: rgb(118, 105, 165);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.eventoa{
+    border: none;
+    outline: none;
+    text-decoration:none;
+    width: 75px;
+    height: 36px;
+    background: rgb(118, 105, 165);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a{
+    top: 467px;
+    left: 43%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(211, 189, 189, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+textarea{
+	min-height: 90px;
+}
+.textbox{
+    width: 95%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid rgb(118, 105, 165);
+}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(126, 123, 123);
+    font-size: 15px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+.fondo1{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.decoracion{
+    width: 140px;
+    top: 50%;
+    left: 53%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.idevento{
+    color:rgb(118, 105, 165);
+    font-size: 15px;
+    padding: 5px;
+}
+/*------------------------------------------ Consultar -------------------------------------------*/
+.fondoburj{
+    margin: 0;
+    padding: 0;
+    background:url(../images/evento.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.consultar{
+    width:650px;
+    height: 500px;
+	background-color:rgb(219, 219, 219);
+	margin:0 auto;
+    padding: 25px;
+}
+.login-box3 {
+    width: 740px;
+    height: 780px;
+    top: -120%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.login-box3 input {
+    width: 48%;
+    margin-bottom: 10px;
+}
+.consultar h1{
+    display: flex;
+    justify-content: center;
+}
+.consultar a{
+    text-decoration:none;
+    width: 75px;
+    height: 27px;
+    background: rgb(118, 105, 165);
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton input[type="submit"]{
+    background-color: rgb(118, 105, 165);
+    color: #fff;
+    font-size: 18px;
+}
+.boton{
+    width: 200px;
+    top: 56%;
+    left: 93%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.boton1{
+    width: 200px;
+    top: 72%;
+    left: 90%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.boton1 input[type="submit"]{
+    background-color: rgb(118, 105, 165);
+    color: #fff;
+    font-size: 18px;
+}
+.boton2{
+    width: 700px;
+    top: 50%;
+    left: 150%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.boton2 input[type="submit"]{
+    background-color: rgb(118, 105, 165);
+    color: #fff;
+    font-size: 18px;
+}
+.textbox1{
+    width: 48%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid rgb(118, 105, 165);
+}
+.textbox1 input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(126, 123, 123);
+    font-size: 15px;
+    width: 60%;
+    float: left;
+    margin: 0 10px;
+}
+.textbox11{
+    width: 48%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid rgb(118, 105, 165);
+}
+.textbox11 input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(126, 123, 123);
+    font-size: 15px;
+    width: 60%;
+    float: left;
+    margin: 0 10px;
+}
+.textbox2{
+    width: 56%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid rgb(118, 105, 165);
+}
+.textbox2 input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(126, 123, 123);
+    font-size: 15px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+.fondo2{
+    width: 280px;
+    position: absolute;
+    top: 54.8%;
+    left: 73%;
+    transform: translate(-50%,-50%);
+}
+.fondo22{
+    width: 280px;
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+}
+.fondo3{
+    width: 280px;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+.fondo4{
+    width: 280px;
+    position: absolute;
+    top: 40%;
+    left: 64%;
+    transform: translate(-50%,-50%);
+}
+.fondo5{
+    width: 280px;
+    position: absolute;
+    top: 40%;
+    left: 99%;
+    transform: translate(-50%,-50%);
+}
+.fondo6{
+    width: 280px;
+    position: absolute;
+    top: 40%;
+    left: 133%;
+    transform: translate(-50%,-50%);
+}
+.fondo7{
+    width: 280px;
+    position: absolute;
+    top: 49%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+}
+.ainicio{
+    width: 75px;
+    top: 29.5%;
+    left: 70%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.lista{
+    top: 50%;
+    left: 47%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.h2 p{
+    background-image: linear-gradient(#9009f2, #9009f2, #9009f2, #9009f2,#000,#000,#000);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent
+}
+.h2{
+    top: 50%;
+    left: 33%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.mostrareditar{
+    top: 10%;
+    left: 65%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.mostrareditar p{
+    width: 100%;
+    color: #000;
+    font-size: 18px;
+}
+#show-modal{
+    width: 75px;
+    text-align: center;
+    background: rgb(118, 105, 165);
+    padding: 5px 5px;
+    color: white;
+    top: 29.5%;
+    left: 54%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.modal{
+    position: fixed;
+    top: 100%;
+    left: 100%;
+    z-index: 999999999;
+    background: transparent;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+.modal .content-modal{
+    max-width: 500px;
+    position: fixed;
+    left: 42.7%;
+    transition: top o.35s ease;
+    margin-left: -250px;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    z-index: 9999999;
+}
+.modal p{
+    padding: 0.5em;
+    text-align: center;
+    margin: 0;
+}
+.modal .article{
+    width: 700px;
+    height: 184px;
+    background: #cc9ef1;
+}
+.close-modal{
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    top: -10px;
+    right: -190px;
+    margin: 0;
+    padding: 5px;
+}
+.modal a:hover{
+    color: #9009f2;
+}
+.modal:target{
+    opacity: 1;
+    top: 0;
+}
+.modal .bnt-close-modal{
+    position:absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999991;
+}
+.modal:target .content-modal{
+    top: 405px;
+    transition: top 0.35s ease;
+}
+#show-modal1{
+    width: 75px;
+    text-align: center;
+    background: rgb(118, 105, 165);
+    padding: 5px 5px;
+    color: white;
+    top: 29.5%;
+    left: 62%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.eliminar{
+    position: fixed;
+    top: 100%;
+    left: 100%;
+    z-index: 99999999;
+    background: transparent;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+.eliminar .content-modal1{
+    max-width: 500px;
+    position: fixed;
+    left: 42.7%;
+    transition: top o.35s ease;
+    margin-left: -250px;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    z-index: 9999999;
+}
+.eliminar p{
+    padding: 0.5em;
+    text-align: center;
+    margin: 0;
+}
+.eliminar .article1{
+    width: 700px;
+    height: 184px;
+    background: #cc9ef1;
+}
+.close-modal1{
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    top: -10px;
+    right: -190px;
+    margin: 0;
+    padding: 5px;
+}
+.eliminar a:hover{
+    color: #9009f2;
+}
+.eliminar:target{
+    opacity: 1;
+    top: 0;
+}
+.eliminar .bnt-close-modal1{
+    position:absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999991;
+}
+.eliminar:target .content-modal1{
+    top: 405px;
+    transition: top 0.35s ease;
+}
+.idboton2{
+    color:rgb(118, 105, 165);
+    font-size: 20px;
+    padding: 5px;
+}
+/*------------------------------------------ Editar perfil ------------------------------------------*/
+.espera{
+    margin: 0;
+    padding: 0;
+    background:url(../images/espera.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.perfil{
+    width:650px;
+    height: 450px;
+	background-color:rgb(219, 219, 219);
+	margin:0 auto;
+    padding: 25px;
+}
+.espera img{
+    width: 370px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+.perfilboton{
+    width: 56%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid rgb(118, 105, 165);
+}
+.perfilboton input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(126, 123, 123);
+    font-size: 15px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+.perfilboton{
+    width: 200px;
+    position: absolute;
+    top: 15%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.perfilboton1{
+    width: 56%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid rgb(118, 105, 165);
+}
+.perfilboton1 input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(126, 123, 123);
+    font-size: 15px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+.perfilboton1{
+    width: 200px;
+    position: absolute;
+    top: 22%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.perfilboton2{
+    width: 56%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid rgb(118, 105, 165);
+}
+.perfilboton2 input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(126, 123, 123);
+    font-size: 15px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+.perfilboton2{
+    width: 200px;
+    position: absolute;
+    top: 28%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.perfilboton3{
+    width: 56%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid rgb(118, 105, 165);
+}
+.perfilboton3 input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(126, 123, 123);
+    font-size: 15px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+.perfilboton3{
+    width: 200px;
+    position: absolute;
+    top: 34%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.perfilboton4{
+    width: 56%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid rgb(118, 105, 165);
+}
+.perfilboton4 input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(126, 123, 123);
+    font-size: 15px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+.perfilboton4{
+    width: 200px;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.perfilboton5{
+    width: 56%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid rgb(118, 105, 165);
+}
+.perfilboton5 input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(126, 123, 123);
+    font-size: 15px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+.perfilboton5{
+    width: 200px;
+    position: absolute;
+    top: 46%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.perfilboton6{
+    width: 56%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid rgb(118, 105, 165);
+}
+.perfilboton6 input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(126, 123, 123);
+    font-size: 15px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+.perfilboton6{
+    width: 200px;
+    position: absolute;
+    top: 53%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.acperfil{
+    width: 200px;
+    top: 63%;
+    left: 68%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.acperfil input[type="submit"]{
+    background-color: rgb(118, 105, 165);
+    color: #fff;
+    font-size: 18px;
+}
+.elperfil{
+    width: 200px;
+    top: 72%;
+    left: 68.5%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.elperfil input[type="submit"]{
+    background-color: rgb(118, 105, 165);
+    color: #fff;
+    font-size: 18px;
+}
+.aperfil a{
+    text-decoration:none;
+    width: 75px;
+    height: 27px;
+    background: rgb(118, 105, 165);
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aperfil{
+    width: 75px;
+    top: 79%;
+    left: 64.2%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.mensajep{
+    top: 86%;
+    left: 49%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.botonperfil{
+    width: 700px;
+    top: 50%;
+    left: 150%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.botonperfil input[type="submit"]{
+    background-color: rgb(118, 105, 165);
+    color: #fff;
+    font-size: 18px;
+}
+.textbox11{
+    width: 48%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid rgb(118, 105, 165);
+}
+.textbox11 input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(126, 123, 123);
+    font-size: 15px;
+    width: 60%;
+    float: left;
+    margin: 0 10px;
+}
+.fondo8{
+    width: 280px;
+    position: absolute;
+    top: 49%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+#show-modal2{
+    width: 75px;
+    text-align: center;
+    background: rgb(118, 105, 165);
+    padding: 5px 5px;
+    color: white;
+    top: 72%;
+    left: 64.3%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.eliminarperfil{
+    position: fixed;
+    top: 100%;
+    left: 100%;
+    z-index: 99999999;
+    background: transparent;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+.eliminarperfil .content-modal2{
+    max-width: 500px;
+    position: fixed;
+    left: 42.7%;
+    transition: top o.35s ease;
+    margin-left: -250px;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    z-index: 9999999;
+}
+.eliminarperfil p{
+    padding: 0.5em;
+    text-align: center;
+    margin: 0;
+}
+.eliminarperfil .article2{
+    width: 700px;
+    height: 184px;
+    background: rgb(177, 173, 173);
+}
+.close-modal2{
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    top: -10px;
+    right: -190px;
+    margin: 0;
+    padding: 5px;
+}
+.eliminarperfil a:hover{
+    color: #9009f2;
+}
+.eliminarperfil:target{
+    opacity: 1;
+    top: 0;
+}
+.eliminarperfil .bnt-close-modal2{
+    position:absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999991;
+}
+.eliminarperfil:target .content-modal2{
+    top: 405px;
+    transition: top 0.35s ease;
+}
+.idevento{
+    margin-top: -15px;
+    color: indigo;
+}
+.idboton2{
+    margin-top: -15px;
+}
+.hr{
+    width: 18%;
+    background-color: #fff;
+    top: 67%;
+    left: 63%;
+    transform: translate(-40%,-40%);
+    position: absolute;
+}
+.mostrareditar1{
+    color: rgb(131, 8, 8);
+    width: 150%;
+    top: 10%;
+    left: 55%;
+    transform: translate(-40%,-40%);
+    position: absolute;
+}

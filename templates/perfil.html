@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/images/logo.jpg">
+    <link rel="stylesheet" type="text/css" href="../static/css/stytle.css">
+    <title>Editar Perfil</title>
+</head>
+<body class="espera">
+    <img src="../static/images/nofoto.png">
+    <div class="perfil">
+        <form action="/perfil" method="POST">
+            <h3 class="idboton2">Su id es: {{user}}</h3>
+            <div class="perfilboton">
+                <input type="text" required name="Documento" placeholder = "ID">
+            </div>
+            <div class="perfilboton1"> 
+                <input type="text" required name="Nombre" placeholder = "Nombre">
+            </div>
+            <div class="perfilboton2">
+                <input name="Apellido" type="text" placeholder = "Apellido">
+            </div>
+            <div class="perfilboton3">
+                <input name="Edad" type="text" placeholder = "Edad">
+            </div>
+            <div class="perfilboton4">
+                <input name="Ocupacion" type="text" placeholder = "Ocupacion">
+            </div>
+            <div class="perfilboton5">
+                <input name="Correo Electronico" type="text" placeholder = "Correo Electronico">
+            </div>
+            <div class="perfilboton6">
+                <input type="text" required name="contraseña" placeholder = "Contraseña">
+            </div>
+            <div class="acperfil">
+                <input type="submit" value = "Actualizar">
+            </div>
+        </form>
+        
+        <div class="aperfil">
+            <a href="inicio">inicio</a>
+        </div>
+        <div class="mensajep">
+            <p>¡El campo ID no se cambia!</p>
+        </div>
+        <hr class="hr"><br>
+    </div>
+
+    <a href="#eliminarperfil" id="show-modal2">Eliminar</a>
+
+    <aside id="eliminarperfil" class="eliminarperfil">
+        <div class="content-modal2">
+            <header>
+                <a href="#" class="close-modal2">x</a>
+                <div class="mostrareditar1">
+                   <p>¡Estas seguro que quieres eliminar, se eliminara todos los datos!</p>
+                </div> 
+            </header>
+            <div class="article2">
+                <article>
+                    <form action="/eliminarperfil/post" method="POST">
+                        <div class="fondo8">
+                            <div class="textbox11">
+                                <input name="evento" type="text" placeholder="ID" required>
+                            </div>
+                        </div>
+                        <div class="botonperfil">
+                            <input type="submit" value="Eliminar">
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </div>
+        <a href="#" class="btn-close-modal2"></a>
+    </aside>   
+</body>
+</html>

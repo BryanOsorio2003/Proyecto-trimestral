@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="../static/css/stytle.css">
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../static/images/logo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c5c4040bb.js" crossorigin="anonymous"></script>
+
+    <title>Login</title>
+</head>
+    <body class="fondo">
+        <div class="login-box">
+            <img src="../static/images/logo.jpg" class="avatar" alt="Avatar Image">
+            <h1>Login</h1>
+            <form action="/" method="POST">
+                <i class="fas fa-user" icon></i>
+                <input type="text" required name="nombre" placeholder="Ingrese el nombre">
+                <i class="fas fa-lock"></i>
+                <input type="password" required name="contraseña" placeholder="Ingrese la contraseña">
+                <input type="submit" value="Iniciar sesión"/><br>
+                <hr><br>
+                <a href="/nuevousuario">Registrarse</a>
+            </form>
+        </div>
+        {%with messages = get_flashed_messages(with_categories=true)%}
+            {%if messages%}
+                {%for category, message in messages%}
+                <div class="emergente">
+                    {{message}}
+                </div>
+                {%endfor%}
+            {%endif%}
+        {%endwith%}
+    </body>
+</html>

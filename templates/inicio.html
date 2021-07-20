@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/images/logo.jpg">
+    <link rel="stylesheet" type="text/css" href="../static/css/stytle.css">
+    <title>Agenda</title>
+</head>
+<body class="fondoinicio">
+    <div class="inicio">
+        <nav>
+			<ul class="menu">
+                <img class="logoinicio" src="../static/images/logo.jpg">
+				<li><a href="/evento" >Agregar Eventos</a><br></li>
+                <li><a href="/consultar" >Ajustes Eventos</a></li>
+                <li><a class="ajustes"><img src="../static/images/ajustes.png" class="ajustes"></a>
+                    <ul class="submenu">
+                        <li><a href="perfil">Editar perfil</a></li><br>
+                        <form action="/logout" method="POST">
+                            <input type="submit" value="Salir" class="cierresesion"/>
+                        </form>
+                    </ul>
+                </li>
+            </ul>
+		</nav><br><br>
+        <table border="2">
+            <tr>
+                <th>ID Evento</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Descripcion</th>
+                <th>Lugar</th>
+            </tr>
+            <tr>
+                <td>
+                    {% for dato in lista1 %}
+                    <p>{{dato[0]}}</p>
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for dato in lista1 %}
+                    <p>{{dato[2]}}</p>
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for dato3 in lista1 %}
+                    <p>{{dato3[3]}}</p>
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for dato4 in lista1 %}
+                    <p>{{dato4[4]}}</p>
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for dato5 in lista1 %}
+                    <p>{{dato5[5]}}</p>
+                    {% endfor %}
+                </td>
+            </tr>
+        </table>
+</body>
+</html>

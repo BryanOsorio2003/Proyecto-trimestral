@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/images/logo.jpg">
+    <link rel="stylesheet" type="text/css" href="../static/css/stytle.css">
+    <title>Nuevo Usuario</title>
+</head>
+<body class="fondonuevo">
+    <div class="login-box1">
+        <img src="../static/images/logo.jpg" class="avatar" alt="Avatar Image">
+        <form action="/nuevousuario" method="POST">
+            <input type="text" required name="Nombre" placeholder = "Nombre">
+            <input name="Apellido" type="text" placeholder = "Apellido">
+            <input name="Edad" type="text" placeholder = "Edad">
+            <input name="Ocupacion" type="text" placeholder = "Ocupacion">
+            <input name="Correo Electronico" type="text" placeholder = "Correo Electronico">
+            <input type="text" required name="contraseña" placeholder = "Contraseña">
+            <input type="submit" value = "Registrar">
+            <hr><br>
+            <a href="/" >Login</a>
+        </form>
+    </div>
+</body>
+</html>

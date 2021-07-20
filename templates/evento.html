@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/images/logo.jpg">
+    <link rel="stylesheet" type="text/css" href="../static/css/stytle.css">
+    <title>Eventos</title>
+</head>
+<body class="fondoevento">
+    <div class="evento">
+        <div class="login-box2">
+            <h1>Agregar Eventos</h1>
+            <h3 class="idevento">Su id es: {{user}}</h3>
+            <form action="/evento/post" method="POST">
+                <div class="fondo1">
+                    <div class="textbox">
+                        <input name="usuario" type="text" placeholder="ID" required>
+                    </div>
+                    <div class="textbox">
+                        <input name="hora" type="time" required>
+                    </div>
+                    <div class="textbox">
+                        <input name="fecha" type="date" required>
+                    </div>
+                    <div class="textbox">
+                        <input name="lugar" type="text" placeholder="Lugar" required>
+                    </div>
+                    <textarea class="field" name="descripcion" type="text" placeholder="Descripcion" required></textarea>
+                    <input type="submit" value="Agregar Evento">
+                </div>
+            </form>
+        </div>
+        <div class="a">
+            <a class="eventoa" href="inicio" >inicio</a>
+        </div>
+        <div class="decoracion">
+            <img src="/static/images/decoracion.jpg">
+        </div>
+    </div>
+</body>
+</html>
